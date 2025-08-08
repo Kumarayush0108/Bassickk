@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kumar - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+        <p class="loading-text">Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="c:\Users\Win10\Desktop\WhatsApp Image 2025-08-06 at 21.42.33_c365f8a6.jpg" alt="Your Name" class="nav-avatar">
+                <span class="nav-name">Ayush Kumar</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#technologies" class="nav-link">Technologies</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+                <div class="shape shape4"></div>
+                <div class="shape shape5"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image-wrapper">
+                        <!-- Replace with your actual photo -->
+                        <img src="c:\Users\Win10\Desktop\WhatsApp Image 2025-08-06 at 21.42.33_c365f8a6.jpg" alt="Your Name" class="profile-image">
+                        <div class="image-glow"></div>
+                        <div class="image-ring"></div>
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name-highlight">Ayush Kumar</span>
+                        </h1>
+                        <p class="hero-subtitle">Frontend Web Developer & Tech Enthusiast</p>
+                        <p class="hero-description">
+                            Passionate about creating cutting-edge web solutions and exploring the frontiers of technology.
+                            I transform ideas into reality through clean, efficient, and scalable code.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary resume-btn" id="downloadResume">
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+                                <div class="btn-ripple"></div>
+                            </button>
+                            <button class="btn btn-secondary explore-btn" onclick="scrollToSection('file:///C:/Users/Win10/AppData/Local/Microsoft/Windows/INetCache/IE/Q58J0Y2G/ayush%20cv.pdf')">
+                                <i class="fas fa-rocket"></i>
+                                <span>Explore Portfolio</span>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </div>
+                        <!-- <div class="social-preview">
+                            <a href="https://linkedin.com/in/ayush-kumar-a7075532a" target="_blank" class="social-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/kumarayush0108" target="_blank" class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:your.email@example.com" class="social-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://instagram.com/ayushh_0047" target="_blank" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">
+                        I'm a passionate frontend web developer with expertise in modern web technologies 
+                        and a keen interest in AI tools. I love building scalable solutions 
+                        that make a real impact in people's lives.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="4">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="0">0</h3>
+                            <p class="stat-label">Freasher</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="6">0</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p class="stat-label">% Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Tools & Platforms</h2>
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="fade-up">
+                    <div class="tool-icon git-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version Control System for tracking changes in source code</p>
+                    <button class="tool-btn git-btn" onclick="openLink('https://git-scm.com/')">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tool-icon github-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Cloud-based hosting service for version control and collaboration</p>
+                    <button class="tool-btn github-btn" onclick="openLink('https://github.com/yourusername')">
+                        <i class="fas fa-user"></i>
+                        <span>View Profile</span>
+                    </button>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon docker-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <p>Containerization platform for developing and deploying applications</p>
+                    <button class="tool-btn docker-btn" onclick="openLink('https://docker.com/')">
+                        <i class="fas fa-rocket"></i>
+                        <span>Explore</span>
+                    </button>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon ai-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Tools</h3>
+                    <p>Machine Learning frameworks and AI development tools</p>
+                    <button class="tool-btn ai-btn" onclick="openLink('https://tensorflow.org/')">
+                        <i class="fas fa-robot"></i>
+                        <span>Discover</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Technologies</h2>
+            <div class="tech-grid">
+                <div class="tech-card html-card" data-aos="zoom-in">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="95"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                    <button class="tech-btn html-btn" onclick="openLink('https://developer.mozilla.org/en-US/docs/Web/HTML')">
+                        <i class="fas fa-code"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tech-card css-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                    <button class="tech-btn css-btn" onclick="openLink('https://developer.mozilla.org/en-US/docs/Web/CSS')">
+                        <i class="fas fa-palette"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tech-card js-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                    <button class="tech-btn js-btn" onclick="openLink('https://developer.mozilla.org/en-US/docs/Web/JavaScript')">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tech-card java-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                    <button class="tech-btn java-btn" onclick="openLink('https://docs.oracle.com/en/java/')">
+                        <i class="fas fa-coffee"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tech-card c-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="75"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                    <button class="tech-btn c-btn" onclick="openLink('https://www.learn-c.org/')">
+                        <i class="fas fa-terminal"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+                <div class="tech-card python-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="88"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                    <button class="tech-btn python-btn" onclick="openLink('https://www.python.org/')">
+                        <i class="fas fa-snake"></i>
+                        <span>Learn More</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card music-card" data-aos="flip-left">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Singing Melodies and exploring different musical genres</p>
+                    <!-- Replace with your actual music app/profile link -->
+                    <button class="hobby-btn music-btn" onclick="openMusicApp('https://open.spotify.com/user/31sujdncooxqoyqsf4mwcva7jpfu?si=27e54ec3989b4155')">
+                        <i class="fas fa-headphones"></i>
+                        <span>Listen to My Music</span>
+                    </button>
+                </div>
+                <div class="hobby-card photography-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Capturing life's beautiful moments through the lens</p>
+                    <button class="hobby-btn photography-btn" onclick="openLink('https://instagram.com/ayushh_0047')">
+                        <i class="fas fa-images"></i>
+                        <span>View Gallery</span>
+                    </button>
+                </div>
+                <div class="hobby-card gaming-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="hobby-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Strategic thinking and problem-solving through games</p>
+                    <button class="hobby-btn gaming-btn" onclick="openLink('https://discord.com/channels/@me')">
+                        <i class="fas fa-trophy"></i>
+                        <span>Gaming Profile</span>
+                    </button>
+                </div>
+                <div class="hobby-card reading-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Reading</h3>
+                    <p>Continuous learning through books and technical articles</p>
+                    <button class="hobby-btn reading-btn" onclick="openLink('https://goodreads.com/user/show/yourusername')">
+                        <i class="fas fa-bookmark"></i>
+                        <span>My Library</span>
+                    </button>
+                </div>
+                <!-- <div class="hobby-card fitness-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="hobby-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness</h3>
+                    <p>Maintaining physical and mental health through exercise</p>
+                    <button class="hobby-btn fitness-btn" onclick="openLink('https://www.strava.com/athletes/yourusername')">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Track Activities</span>
+                    </button>
+                </div> -->
+                <div class="hobby-card travel-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="hobby-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel</h3>
+                    <p>Exploring new cultures and gaining diverse perspectives</p>
+                    <button class="hobby-btn travel-btn" onclick="openLink('https://tripadvisor.com/Profile/yourusername')">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Travel Stories</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card Programming-card" data-aos="slide-up">
+                    <div class="cert-badge">
+                        <i class="fab fa-c"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p class="cert-issuer">C language</p>
+                    <p class="cert-date">Issued: March 2024</p>
+                    
+                    <button class="cert-btn c-btn" onclick="openLink('file:///C:/Users/Win10/Desktop/c%20programming.pdf')">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </button>
+                </div>
+                <div class="cert-card Programming-card" data-aos="slide-up" data-aos-delay="100">
+                    <div class="cert-badge">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Web Designing</h3>
+                    <p class="cert-issuer">Web Development</p>
+                    <p class="cert-date">Issued: November 2024</p>
+                    
+                    <button class="cert-btn github-project-btn" onclick="openLink('file:///C:/Users/Win10/Desktop/web%20designing.pdf')">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </button>
+                </div>
+                <div class="cert-card Programming-card" data-aos="slide-up" data-aos-delay="200">
+                    <div class="cert-badge">
+                        <i class="fab fa-book-open"></i>
+                    </div>
+                    <h3>Entrepreneurship Awareness Drive</h3>
+                    <p class="cert-issuer">Entrepreneurship Awareness Cell</p>
+                    <p class="cert-date">Issued: December 2023</p>
+                    
+                    <button class="cert-btn fa-book-open-btn" onclick="openLink('file:///C:/Users/Win10/Desktop/Ayush%20kumar%20-%20EAD-LSM%202023%20participation%20certificate.pdf')">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </button>
+                </div>
+                <div class="cert-card Programming-card" data-aos="slide-up" data-aos-delay="300">
+                    <div class="cert-badge">
+                        <i class="fab fa-plane"></i>
+                    </div>
+                    <h3>UptoSkills</h3>
+                    <p class="cert-issuer">Uptoslills</p>
+                    <p class="cert-date">Issued: April 2024</p>
+                    
+                    <button class="cert-btn plane-btn" onclick="openLink('file:///C:/Users/Win10/Desktop/Ayush%20Kumar.pdf')">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <!-- <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Senior Full Stack Developer</h3>
+                        <h4>TechCorp Solutions</h4>
+                        <p class="timeline-date">2022 - Present</p>
+                        <p class="timeline-desc">
+                            Leading development of scalable web applications using React, Node.js, and cloud technologies.
+                            Mentoring junior developers and implementing best practices across the team.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                        <button class="exp-btn" onclick="openLink('https://techcorp.com')">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Company</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Software Developer</h3>
+                        <h4>Innovation Labs Inc.</h4>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <p class="timeline-desc">
+                            Developed mobile applications and backend services. Collaborated with cross-functional teams
+                            to deliver high-quality software solutions on time and within budget.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                        <button class="exp-btn" onclick="openLink('https://innovationlabs.com')">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Company</span>
+                        </button>
+                    </div>
+                </div> -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Project Contributor</h3>
+                        <h4>GirlScript Summer of Code</h4>
+                        <p class="timeline-date">Present- 2025</p>
+                        <p class="timeline-desc">
+                            contributing on GSSoC community using web technologies like JavaScript, React, Git & GitHub and more...
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                        <button class="exp-btn" onclick="openLink('https://gssoc.girlscript.tech/')">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Company</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="https://thumbs.dreamstime.com/b/app-translate-language-illustrations-flat-design-concept-people-working-icon-application-vector-illustrate-175610072.jpg" alt="transaltor">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://kumarayush0108.github.io/translator/')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/Kumarayush0108/translator.git')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Language Translator</h3>
+                        <p>A web based language transaltor app that translates over 50+ languages</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1651340927948-26826aaef4b0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1cnJlbmN5JTIwZXhjaGFuZ2V8ZW58MHx8MHx8fDA=" alt="convertor">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://kumarayush0108.github.io/REPO-CC/')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/Kumarayush0108/REPO-CC.git')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Currency convertor</h3>
+                        <p>A web based currency convertor app that converts currency rate in real time with 99% accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Task+Manager" alt="Task Manager">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://your-taskmanager-demo.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/yourusername/task-manager')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Collaborative Task Manager</h3>
+                        <p>Team productivity tool with real-time collaboration, project tracking, and advanced reporting features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/fbbf24/ffffff?text=Weather+Dashboard" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://your-weather-demo.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/yourusername/weather-dashboard')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Interactive weather application with location-based forecasts, historical data, and beautiful visualizations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/34d399/ffffff?text=Cryptocurrency+Tracker" alt="Crypto Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://your-crypto-demo.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/yourusername/crypto-tracker')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cryptocurrency Tracker</h3>
+                        <p>Real-time cryptocurrency portfolio tracker with price alerts, market analysis, and trading insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">CoinGecko API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/ef4444/ffffff?text=Social+Media+App" alt="Social Media App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-btn demo-btn" onclick="openLink('https://your-social-demo.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </button>
+                                <button class="project-btn github-project-btn" onclick="openLink('https://github.com/yourusername/social-media-app')">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Media Platform</h3>
+                        <p>Modern social networking platform with real-time messaging, content sharing, and advanced privacy controls.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-description">Ready to collaborate? Let's create something extraordinary together!</p>
+            <div class="contact-grid">
+                <div class="contact-card linkedin-card" data-aos="flip-up">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Professional Network & Career Updates</p>
+                    <a href="https://linkedin.com/in/ayush-kumar-a7075532a" target="_blank" class="contact-btn linkedin-btn">
+                        <i class="fas fa-handshake"></i>
+                        <span>Let's Connect</span>
+                    </a>
+                </div>
+                <div class="contact-card github-contact-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Open Source Projects & Code Repository</p>
+                    <a href="https://github.com/kumarayush0108" target="_blank" class="contact-btn github-contact-btn">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Follow Me</span>
+                    </a>
+                </div>
+                <div class="contact-card email-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Direct Communication & Queries</p>
+                    <a href="https://gmail.com/aayushh2507@gmail.com" class="contact-btn email-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </a>
+                </div>
+                <div class="contact-card instagram-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Creative Journey & Behind the Scenes</p>
+                    <a href="https://instagram.com/ayushh_0047" target="_blank" class="contact-btn instagram-btn">
+                        <i class="fas fa-camera"></i>
+                        <span>Follow Journey</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <!-- <img src="https://via.placeholder.com/40x40/667eea/ffffff?text=YN" alt="Your Name" class="footer-avatar">
+                        <span>Your Name</span>
+                    </div>
+                    <p class="footer-desc">Crafting digital experiences with passion and precision.</p> -->
+                </div>
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/ayush-kumar-a7075532a" target="_blank" class="footer-social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/kumarayush0108" target="_blank" class="footer-social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="footer-social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://instagram.com/ayushh_0047" target="_blank" class="footer-social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="footer-copyright">&copy; 2025 Your Name. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
